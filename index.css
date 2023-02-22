@@ -1,345 +1,275 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-  }
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-
-  .container{
-    width: 100%;
-    height: 150vh;
-    padding: 0 8%;
-  }
-  .container h1{
-    text-align:center;
-    padding-top: 10%;
-    margin-bottom: 60px;
-    font-weight: 600;
-    position: relative;
-    color: #ccccff;
-  }
-  .container h1::after{
-    content: '';
-    background: #ccccff;
-    width: 100px;
-    height: 5px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .row{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 30px;
-  }
-  .service{
-    text-align: center;
-    padding: 25px 10px;
-    font-size: 14px;
-    cursor: pointer;
-    background: transparent;
-    transition: transform 0.5s, background 0.5s;
-    color: #bbdbf7;
-    border-radius: 10px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.03), 0px 0px 20px rgba(0, 0, 0, 0.03);
-  }
-  .service i{
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: #ccccff;
-  }
-  .service h2{
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-  .service:hover{
-    background-image: linear-gradient(to bottom right, #bbdbf7, #ccccff);
-    color: #fff;
-    transform: scale(1.05);
-    transition: 0.5s;
-    box-shadow: 0 0px 20px #bbdbf7, 0px 0px 20px #ccccff;
-  }
-  .service:hover i{
-    color: #fff;
-  }
-  
-  
-  
-  
-  
-  
-  .gym{
-    text-align: center;
-    padding: 25px 10px;
-    border-radius: 10px;
-    font-size: 14px;
-    cursor: pointer;
-    background: transparent;
-    transition: transform 0.5s, background 0.5s;
-    color: #fbbd81;
-    background-color: #fff;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.03), 0px 0px 20px rgba(0, 0, 0, 0.03);
-
-  }
-  .gym i{
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: #fbbd81;
-  }
-  .gym h2{
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-  .gym:hover{
-    background: #fbbd81;
-    color: #fff;
-    transform: scale(1.05);
-    transition: 0.5s;
-    box-shadow: 0 0px 20px #fbbd81, 0px 0px 20px #fbbd81;
-
-  }
-  .gym:hover i{
-    color: #fff;
-  }
-
-
-
-
-
-
-
-  .school{
-    text-align: center;
-    padding: 25px 10px;
-    font-size: 14px;
-    cursor: pointer;
-    background: transparent;
-    transition: transform 0.5s, background 0.5s;
-    color: #92d293;
-    border-radius: 10px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.03), 0px 0px 20px rgba(0, 0, 0, 0.03);
-
-  }
-  .school i{
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: #92d293
-  }
-  .school h2{
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-  .school:hover{
-    background: #92d293;
-    color: #fff;
-    transform: scale(1.05);
-    transition: 0.5s;
-    box-shadow: 0 0px 20px #92d293, 0px 0px 20px #92d293;
-  }
-  .school:hover i{
-    color: #fff;
-  }
-  
-  .finance{
-    text-align: center;
-    padding: 25px 10px;
-    font-size: 14px;
-    cursor: pointer;
-    background: transparent;
-    transition: transform 0.5s, background 0.5s;
-    color: #f3e496;
-    border-radius: 10px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.03), 0px 0px 20px rgba(0, 0, 0, 0.03);
-    }
-  .finance i{
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: #f3e496;
-  }
-  .finance h2{
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-  .finance:hover{
-    background: #f3e496;
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 0 0px 20px #f3e496, 0px 0px 20px #f3e496;
-    transition: 0.5s;
-    box-shadow: 0 0px 20px #f3e496, 0px 0px 20px #f3e496;
-
-  }
-  .finance:hover i{
-    color: #fff;
-  }
-  
-  .language{
-    text-align: center;
-    padding: 25px 10px;
-    font-size: 14px;
-    cursor: pointer;
-    background: transparent;
-    transition: transform 0.5s, background 0.5s;
-    color: #f47174;
-    border-radius: 10px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.03), 0px 0px 20px rgba(0, 0, 0, 0.03);
-    /*box-shadow: 0px 0px 20px #f47174, 0px 0px 20px #f47174;*/
-  }
-  .language i{
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: #f47174;
-  }
-  .language h2{
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-  .language:hover{
-    background: #f47174;
-    color: #fff;
-    transform: scale(1.05);
-    transition: 0.5s;
-    box-shadow: 0 0px 20px #f47174, 0px 0px 20px #f47174;
-  }
-  .language:hover i{
-    color: #fff;
-  }
-  
-  .shower{
-    text-align: center;
-    padding: 25px 10px;
-    font-size: 14px;
-    cursor: pointer;
-    background: transparent;
-    transition: transform 0.5s, background 0.5s;
-    color: #bbdbf7;
-    border-radius: 10px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.03), 0px 0px 20px rgba(0, 0, 0, 0.03);
-  }
-  .shower i{
-    font-size: 40px;
-    margin-bottom: 10px;
-    color: #bbdbf7;
-  }
-  .shower h2{
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-  .shower:hover{
-    background: #8c92ac;
-    color: #fff;
-    transform: scale(1.05);
-    transition: 0.5s;
-    box-shadow: 0 0px 20px #8c92ac, 0px 0px 20px #8c92ac;
-
-  }
-  .shower:hover i{
-    color: #fff;
-  }
-
-
-::-webkit-scrollbar
-{
-    width: 12px;
-}
-
-::-webkit-scrollbar-track
-{
-    background: transparent;
-    
-}
-
-::-webkit-scrollbar-thumb
-{
-    background: linear-gradient(to top, #ccccff, #bbdbf7, #fff);
-    border-radius: 5px; 
-}
-
-::-webkit-scrollbar-thumb:hover
-{
-    background: linear-gradient(to top, #ccccff, #bbdbf7);
-  }
-
-
-
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
   /*
-
-
-*, *::after, *::before {
-    box-sizing: border-box;
-  }
-  
+      Blue: hsl(207, 90%, 61%)
+      Purple: hsl(250, 66%, 75%)
+      Pink: hsl(356, 66%, 75%)
+      Teal: hsl(174, 63%, 62%)
   */
-  .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 0.5s ease-in-out;
-    border-radius: 10px;
-    z-index: 10;
-    background-color: #fbbd81;
-    width: 500px;
-    max-width: 80%;
-    }
-  
-  .modal.active {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  
-  .modal-header {
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .modal-header .title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #fff;
-    margin-left: 30%;
-  }
-  
-  .modal-header .close-button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #fff;
-  }
-  
-  .modal-body {
-    padding: 10px 15px;
-    color: #fff;
-  }
-  
-  #overlay {
-    position: fixed;
-    opacity: 0;
-    transition: 0.5s ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fbbd81;
-    pointer-events: none;
-  }
-  
-  #overlay.active {
-    opacity: 1;
-    pointer-events: all;
-  }
 
-  input[type="button"] {
-    border: none;
-    outline:none;
-    }
+  --hue: 207;
+  --sat: 90%;
+  --lig: 61%;
 
-    button {
-      outline: none;
-    }
+  --first-color: hsl(var(--hue), var(--sat), var(--lig));
+  --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
+  --title-color: hsl(var(--hue), 12%, 15%);
+  --text-color: hsl(var(--hue), 12%, 45%);
+  --text-color-light: hsl(var(--hue), 8%, 75%);
+  --text-color-lighten: hsl(var(--hue), 8%, 92%);
+  --body-color: hsl(var(--hue), 100%, 99%);
+  --container-color: #fff;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .3s; /* For animation dark mode */
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== THEME ===============*/
+
+
+/*========== Variables Dark theme ==========*/
+
+
+/*========== 
+    Color changes in some parts of 
+    the website, in light theme
+==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*=============== PROFILE ===============*/
+.profile{
+  position: relative;
+  padding-top: 3.5rem;
+}
+
+.profile__container{
+  row-gap: 2rem;
+}
+
+.profile__data{
+  display: grid;
+  text-align: center;
+}
+
+.profile__perfil{
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(180deg,
+              hsla(var(--hue), var(--sat), var(--lig), 1) 0%
+              hsla(var(--hue), var(--sat), var(--lig), .2) 100%);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.profile__perfil img{
+  width: 75px;
+}
+
+.profile__border{
+  border: 3.5px solid var(--first-color);
+  justify-self: center;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: .75rem;
+}
+
+.profile__name{
+  font-size: var(--h2-font-size);
+}
+
+.profile__profession{
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.profile__social{
+  display: flex;
+  justify-content: center;
+  column-gap: .75rem;
+}
+
+.profile__social-link{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  transition: .3s
+}
+
+.profile__social-link:hover{
+  color: var(--first-color);
+}
+
+.profile__info{
+  grid-template-columns: repeat(3, max-content);
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+
+.profile__info-group{
+  text-align:center;
+}
+
+.profile__info-number{
+  font-size: var(--normal-font-size);
+  margin-bottom: .25rem;
+}
+
+.profile__info-description{
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+}
+
+
+
+.profile__buttons,
+.profile__buttons-small{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__buttons{
+  column-gap: 1rem;
+}
+
+.profile__buttons-small{
+  column-gap: .25rem;
+}
+
+
+/*=============== BUTTONS ===============*/
+.button{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1.15rem 1.5rem;
+  border-radius: .5rem;
+  transition:  .3s;
+  box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
+}
+
+.button i{
+ font-size: 1.25rem; 
+}
+
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+
+.button__small{
+  padding: .75rem;
+  box-shadow: none;
+}
+
+.button__gray{
+  background-color: var(--text-color-lighten);
+  color: var(--title-color);
+}
+
+.button__gray:hover{
+  background-color: var(--text-color-light);
+}
+/*=============== FILTERS TABS ===============*/
+
+
+/*=============== PROJECTS ===============*/
+
+
+/*=============== SKILLS ===============*/
+
+
+/* Hide and show projects & skills */
+
+
+/* Activate button filter */
+
+
+/*=============== FOOTER ===============*/
+
+
+/*=============== SCROLL BAR ===============*/
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */
