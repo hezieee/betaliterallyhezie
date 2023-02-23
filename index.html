@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="website icon.png" type="image/x-icon">
         <!--=============== REMIX ICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <!--=============== CSS ===============-->
@@ -15,6 +15,14 @@
     <body>
         <!--=============== HEADER PROFILE ===============-->
         <header class="profile container">
+            <!--theme button-->
+
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+
+
+
+
             <div class="profile__container grid">
                 <div class="profile__data">
                     <div class="profile__border">
@@ -24,7 +32,7 @@
                         </div>
                     </div>
 
-                    <h2 class="profil__name">David Ulit</h2>
+                    <h2 class="profile__name">David Ulit</h2>
                     <h3 class="profile__profession">civil engineering major</h3>
 
                     <ul class="profile__social">
@@ -35,9 +43,14 @@
                         <a href="https://github.com/hezieee" target="blank" class="profile__social-link">
                             <i class="ri-github-line"></i>
                         </a>
-
                         <a href="https://www.youtube.com/channel/UCrHompc7z2Qw0W0NALsN3xA" target="blank" class="profile__social-link">
                             <i class="ri-youtube-line"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="blank" class="profile__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
                         </a>
                     </ul>
                 </div>
@@ -68,7 +81,7 @@
                 </div>
                 <div class="profile__buttons">
                     <!--Insert your CV-->
-                    <a download="" href="resume (David Ulit).pdf" class="button">
+                    <a download="" href="resume (public usage).pdf" class="button">
                         resume <i class="ri-download-cloud-2-line"></i>
                     </a>
                     <div class="profile__buttons-small">
@@ -86,11 +99,13 @@
         </header>
 
         <!--=============== MAIN ===============-->
+
+        <!--
         <main class="main">
             <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
+                =============== FILTERS TABS ===============
                 <ul class="filters__content">
-                    <button class="filters__button" data-target="#projects">
+                    <button class="filters__button filter-tab-actve" data-target="#projects">
                         projects
                     </button>
 
@@ -101,11 +116,10 @@
 
 
                 <div class="filters__sections">
-                    <!--=============== PROJECTS ===============-->
-                    <div class="projects__content grid" data-content id="projects">
+                    =============== PROJECTS ===============
+                    <div class="projects__content grid filter__active" data-content id="projects">
                         <article class="projects__card">
-                            <img src="project1.jpg" alt="" class="projects__img">
-
+                            <img src="project.jpeg" alt="" class="projects__img">
                             <div class="project__modal">
                                 <div>
                                     <span class="projects__subtitle">...</span>
@@ -118,7 +132,7 @@
                         </article>
 
                         <article class="projects__card">
-                            <img src="project2.jpg" alt="" class="projects__img">
+                            <img src="project.jpeg" alt="" class="projects__img">
 
                             <div class="project__modal">
                                 <div>
@@ -132,7 +146,7 @@
                         </article>
 
                         <article class="projects__card">
-                            <img src="project3.jpg" alt="" class="projects__img">
+                            <img src="project.jpeg" alt="" class="projects__img">
 
                             <div class="project__modal">
                                 <div>
@@ -146,7 +160,7 @@
                         </article>
 
                         <article class="projects__card">
-                            <img src="project4.jpg" alt="" class="projects__img">
+                            <img src="project.jpeg" alt="" class="projects__img">
 
                             <div class="project__modal">
                                 <div>
@@ -160,7 +174,7 @@
                         </article>
 
                         <article class="projects__card">
-                            <img src="project5.jpg" alt="" class="projects__img">
+                            <img src="project.jpeg" alt="" class="projects__img">
 
                             <div class="project__modal">
                                 <div>
@@ -183,22 +197,163 @@
 
                     </div>
 
-                    <!--=============== SKILLS ===============-->
+                    =============== SKILLS ===============
                     <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Frontend developer
+                            </h3>
+
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">HTML</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">CSS</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Javascript</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">igu</h3>
+                                            <span class="skills__level">maybe</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Backend Developer
+                            </h3>
+
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">PHP</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">MySQL</h3>
+                                            <span class="skills__level">Advanced</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Firebase</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Pthyoon</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Mode Js</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">hmmm</h3>
+                                            <span class="skills__level">probably</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
 
                     </div>
                 </div>
             </section>
         </main>
-
+    -->
         <!--=============== FOOTER ===============-->
         <footer class="footer container">
-            
+            <span class="footer__copy">
+                &#169; literallyhezie. all rights reserved
+            </span>
         </footer>
-
         <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
-
+        <script src="scrollreveal.min.js"></script>
         <!--=============== MAIN JS ===============-->
         <script src="index.js"></script>
     </body>
