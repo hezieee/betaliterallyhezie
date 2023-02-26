@@ -77,7 +77,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 /*=============== THEME ===============*/
 .change-theme{
   position: absolute;
@@ -101,8 +100,7 @@ body.dark-theme{
 }
 
 /*========== 
-    Color changes in some parts of 
-    the website, in light theme
+    Color changes in some parts of the website, in light theme
 ==========*/
 .dark-theme .button__gray{
   background-color: var(--container-color);
@@ -178,6 +176,8 @@ body.dark-theme{
   display: grid;
   place-items: center;
   margin-bottom: .75rem;
+  box-shadow: 0 0px 40px hsla(var(--hue), var(--sat), var(--lig), .25);
+
 }
 
 .profile__name{
@@ -227,8 +227,6 @@ body.dark-theme{
   font-weight: 500;
 }
 
-
-
 .profile__buttons,
 .profile__buttons-small{
   display: flex;
@@ -243,7 +241,6 @@ body.dark-theme{
 .profile__buttons-small{
   column-gap: 0.75rem;
 }
-
 
 /*=============== BUTTONS ===============*/
 .button{
@@ -280,7 +277,6 @@ body.dark-theme{
 .button__gray:hover{
   background-color: var(--text-color-light);
 }
-
 /*=============== FILTERS TABS ===============*/
 .filters__content{
   margin: 2rem 0 2.5rem;
@@ -312,95 +308,9 @@ body.dark-theme{
 }
 
 /*=============== PROJECTS ===============*/
-.projects__card{
-  position: relative;
-  border-radius: 1rem;
-  overflow: hidden;
-}
 
-.projects__card img{
-  width: 100%;
-  height: 100%;
-}
-
-.projects__modal{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: -100;
-  left: 0;
-  background: linear-gradient(180deg,
-              hsla(var(--hue), 24%, 40%, .3) 0%,
-              hsla(var(--hue), 24%, 4%, 1) 95%);
-  display: grid;
-  align-items: flex-end;
-  padding: 1.5rem 1.25rem;
-  transition: .3s;
-}
-
-.projects__subtitle,
-.projects__title{
-  color: #fff;
-}
-
-.projects__subtitle{
-  font-size: var(--smaller-font-size);
-}
-
-.projects__title{
-  font-size: var(--h3-font-size);
-  margin-bottom: .75rem;
-}
-
-.projects__button{
-  padding: 5rem;
-}
-
-.projects__card:hover .projects__modal{
-  bottom: 0;
-}
 /*=============== SKILLS ===============*/
-.skills__content{
-  row-gap: 3.5rem;
-}
 
-.skills__title{
-  font-size: var(--h3-font-szie);
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.skills__box{
-  display: flex;
-  justify-content: center;
-  column-gap: 3rem;
-}
-
-.skills__group{
-  display: grid;
-  align-content: flex-start;
-  row-gap: 1rem;
-}
-
-.skills__data{
-  display: flex;
-  column-gap: .5rem;
-}
-
-.skills__data i{
-  font-size: 1rem;
-  color: var(--first-color);
-}
-
-.skills__name{
-  font-size: var(--normal-font-size);
-  font-weight: 500;
-  line-height: 18px;
-}
-
-.skills_level{
-  font-size: var(--smaller-font-size);
-}
 /* Hide and show projects & skills */
 .filters [data-content]{
   display: none;
@@ -414,7 +324,6 @@ body.dark-theme{
 .filter-tab-active{
   background-color: var(--body-color);
 }
-
 /*=============== FOOTER ===============*/
 .footer__copy{
   display: block;
@@ -482,7 +391,6 @@ body.dark-theme{
     column-gap: 3rem;
   }
 }
-
 
 /* For large devices */
 @media screen and (min-width: 992px){
